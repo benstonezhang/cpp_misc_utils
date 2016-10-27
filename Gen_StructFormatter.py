@@ -10,9 +10,9 @@ import re
 
 script_name = re.match(r'.*/([\w\.]+)', sys.argv[0]).groups()[0]
 
-hdr_files = sys.argv[1].split(';')
+hdr_files = sys.argv[1:]
 
-cpp_class_name = 'StructFormat'
+cpp_class_name = 'StructFormatter'
 hpp_file = cpp_class_name + '.h'
 cpp_file = cpp_class_name + '.cpp'
 
