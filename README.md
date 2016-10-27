@@ -9,8 +9,12 @@ Run below command:
 cd Samples
 python ../Gen_StructFormatter.py sample_const.h sample_datatype.h sample_struct.h
 ```
-new files will be generated in the `Samples` folder:
+some convenient method will be generated in the new files at `Samples` folder:
 ```
 StructFormatter.cpp
 StructFormatter.h
+```
+The formatter method is mimic standard library function `sprintf`, below is a example:
+```
+int StructFormatter::sprint(char *buf, const char *prefix, const STRUCT_FOO1 *p)
 ```
