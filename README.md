@@ -18,7 +18,7 @@ some convenient method will be generated in the new files at `Samples` folder:
 StructFormatter.cpp
 StructFormatter.h
 ```
-The formatter method is mimic standard library function `sprintf`, below is a example:
+The formatter method mimic the classical function `sprintf`, below is a example:
 ```
 int StructFormatter::sprint(char *buf, const char *prefix, const STRUCT_FOO1 *p)
 ```
