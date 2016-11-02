@@ -1,4 +1,4 @@
-# Useful script to handle C/C++ header/source files.
+# Libraris and scripts to make coder's life easy :-)
 
 ## StructFormat
 python script to parse C/C++ header files and generate C++ code for formatting data of struct.
