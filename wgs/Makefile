@@ -1,4 +1,4 @@
-CFLAGS=-Wall -fPIC
+CFLAGS=-std=gnu11 -Wall -fPIC
 
 lib: libwgs_utils.a
 
