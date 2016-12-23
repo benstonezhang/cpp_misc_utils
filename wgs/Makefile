@@ -1,4 +1,4 @@
-CFLAGS=-std=gnu11 -Wall -fPIC
+CFLAGS=-Wall -fPIC -D_GNU_SOURCE
 
 lib: libwgs_utils.a
 
@@ -6,7 +6,7 @@ libwgs_utils.a: wgs_utils.o
 	ar -cr $@ $?
 
 test: wgs_utils.c
-	gcc ${CFLAGS} -o $@ -DWGS_UTILS_TEST $^
+	gcc ${CFLAGS} -o $@ -DWGS_UTILS_TEST $^ -lm
 
 .c.o:
 	gcc ${CFLAGS} -c -o $@ $<

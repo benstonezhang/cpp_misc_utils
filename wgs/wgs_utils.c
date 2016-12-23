@@ -6,7 +6,7 @@
 #include "wgs_utils.h"
 
 static const double radian_per_degree = M_PI / 180.0;
-static const double radian_of_degree_3000  = radian_per_degree * 3000.0;
+static const double radian_of_degree_3000  = M_PI * 3000.0 / 180.0;
 
 /*
  * Krasovsky 1940 (SK-42):
@@ -47,6 +47,7 @@ int main(int argc, char **argv)
 	printf("  GCJ02 -> BD09:  (%.16f, %.16f)\n", a, b);
 	wgs_bd09_to_gcj02(lat,lng, &a, &b);
 	printf("  BD09  -> GCJ02: (%.16f, %.16f)\n", a, b);
+	return 0;
 }
 
 #endif
